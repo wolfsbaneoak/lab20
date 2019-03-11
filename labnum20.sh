@@ -26,13 +26,13 @@ head --lines -9 greek_abc phonetic_code
 
 du -c greek_abc phonetic_code
 
-ridley@ridley-HP-EliteBook-8460p:~$ df -a abc
+df -a abc
 
 paste --serial greek_abc phonetic_code
 
-ridley@ridley-HP-EliteBook-8460p:~$ sed 's/^/        /' file_1 > file_new
+sed 's/^/        /' file_1 > file_new
 
-ridley@ridley-HP-EliteBook-8460p:~$ tar -cf alphabe.tar greek_abc phonetic_code
+tar -cf alphabe.tar greek_abc phonetic_code
 
 tr -d 0-9 <digits_0-9
 
